@@ -51,7 +51,7 @@
       overflow: hidden;
       background:
         linear-gradient(90deg, rgba(12, 19, 32, .88) 0%, rgba(12, 19, 32, .72) 42%, rgba(12, 19, 32, .22) 100%),
-        url("服务车.jpg") center / cover no-repeat;
+        url("assets/service-van.jpg") center / cover no-repeat;
     }
 
     .hero::after {
@@ -83,18 +83,28 @@
     }
 
     .mark {
-      width: 56px;
+      width: 92px;
       height: 56px;
       display: grid;
       place-items: center;
       border-radius: 8px;
-      color: var(--red);
       background: linear-gradient(135deg, #fff 0%, #ffe8e8 55%, #fff6ce 100%);
       border: 2px solid rgba(255, 255, 255, .9);
       box-shadow: 0 10px 24px rgba(0, 0, 0, .22);
       font-weight: 900;
       font-size: 26px;
       line-height: 1;
+      font-family: "STXingkai", "KaiTi", "Microsoft YaHei", serif;
+      letter-spacing: 0;
+      color: transparent;
+      background-image:
+        linear-gradient(135deg, #fff 0%, #ffe8e8 55%, #fff6ce 100%),
+        linear-gradient(135deg, #e01919 0%, #8d0808 52%, #f0a020 100%);
+      background-origin: border-box;
+      background-clip: padding-box, text;
+      -webkit-background-clip: padding-box, text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 0 rgba(255, 255, 255, .34), 0 8px 14px rgba(168, 16, 16, .2);
     }
 
     .topline strong {
@@ -388,7 +398,7 @@
       overflow: hidden;
       background:
         linear-gradient(180deg, rgba(24, 34, 54, .05), rgba(24, 34, 54, .48)),
-        url("服务车.jpg") center / cover no-repeat;
+        url("assets/service-van.jpg") center / cover no-repeat;
       box-shadow: var(--shadow);
     }
 
@@ -526,7 +536,7 @@
         min-height: 88vh;
         background:
           linear-gradient(180deg, rgba(12, 19, 32, .84) 0%, rgba(12, 19, 32, .7) 48%, rgba(12, 19, 32, .5) 100%),
-          url("服务车.jpg") center / cover no-repeat;
+          url("assets/service-van.jpg") center / cover no-repeat;
       }
 
       .hero-content,
@@ -609,7 +619,7 @@
     <header class="hero">
       <div class="hero-content">
         <div class="topline">
-          <div class="mark" aria-hidden="true">龙</div>
+          <div class="mark" aria-hidden="true">龙腾</div>
           <div>
             <strong>莘县 龙腾</strong>
             <span>家电地暖清洗 · 维修 · 安装</span>
