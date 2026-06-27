@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>莘县龙腾家电地暖清洗维修</title>
+  <meta name="description" content="莘县龙腾家电地暖清洗维修，空调、冰箱、洗衣机、热水器、油烟机、地暖、暖气片、管道疏通、厨卫用品出售安装。电话微信：15863565769。">
+  <style>
+    :root {
+      --red: #d82020;
+      --red-dark: #a91010;
+      --blue: #1266b0;
+      --cyan: #0797a5;
+      --yellow: #ffd35a;
+      --ink: #182236;
+      --soft-ink: #566274;
+      --line: #e2e8f0;
+      --bg: #f4f7fb;
+      --white: #ffffff;
+      --shadow: 0 18px 44px rgba(24, 34, 54, .14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", Arial, sans-serif;
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      min-height: 100vh;
+      padding-bottom: 86px;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: grid;
+      align-items: end;
+      color: #fff;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(12, 19, 32, .88) 0%, rgba(12, 19, 32, .72) 42%, rgba(12, 19, 32, .22) 100%),
+        url("assets/service-van.jpg") center / cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 130px;
+      background: linear-gradient(180deg, rgba(244, 247, 251, 0), var(--bg));
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      width: min(1120px, calc(100% - 34px));
+      margin: 0 auto;
+      padding: 44px 0 104px;
+    }
+
+    .topline {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding: 10px 14px 10px 10px;
+      border: 1px solid rgba(255, 255, 255, .35);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .12);
+      backdrop-filter: blur(10px);
+    }
+
+    .mark {
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      color: var(--red);
+      background: linear-gradient(135deg, #fff 0%, #ffe8e8 55%, #fff6ce 100%);
+      border: 2px solid rgba(255, 255, 255, .9);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, .22);
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    .topline strong {
+      display: block;
+      font-size: clamp(18px, 3vw, 28px);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    .topline span {
+      display: block;
+      color: rgba(255, 255, 255, .82);
+      font-size: 14px;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 0;
+      font-size: clamp(42px, 7.2vw, 88px);
+      line-height: 1.04;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    .lead {
+      max-width: 720px;
+      margin: 22px 0 28px;
+      color: rgba(255, 255, 255, .9);
+      font-size: clamp(18px, 2.2vw, 25px);
+      font-weight: 600;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn {
+      min-height: 56px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      font-weight: 900;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, .22);
+    }
+
+    .btn-primary {
+      padding: 0 24px;
+      color: #fff;
+      background: var(--red);
+      font-size: 21px;
+    }
+
+    .btn-secondary {
+      padding: 0 18px;
+      color: var(--ink);
+      background: #fff;
+      font-size: 17px;
+    }
+
+    .summary {
+      position: relative;
+      z-index: 2;
+      width: min(1120px, calc(100% - 34px));
+      margin: -48px auto 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+    }
+
+    .summary-item {
+      padding: 22px 20px;
+      border-right: 1px solid var(--line);
+    }
+
+    .summary-item:last-child {
+      border-right: 0;
+    }
+
+    .summary-item b {
+      display: block;
+      color: var(--red-dark);
+      font-size: 21px;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+
+    .summary-item span {
+      color: var(--soft-ink);
+      font-size: 15px;
+    }
+
+    main {
+      width: min(1120px, calc(100% - 34px));
+      margin: 56px auto 0;
+    }
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 22px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .section-title p {
+      max-width: 430px;
+      margin: 0;
+      color: var(--soft-ink);
+      font-size: 16px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .card {
+      min-height: 174px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(24, 34, 54, .06);
+    }
+
+    .card.hot {
+      border-color: #f1b7b7;
+      background: linear-gradient(145deg, #fff, #fff3f3);
+    }
+
+    .badge {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      color: #fff;
+      background: var(--blue);
+      font-weight: 900;
+      font-size: 22px;
+    }
+
+    .card:nth-child(2) .badge,
+    .card:nth-child(7) .badge {
+      background: var(--cyan);
+    }
+
+    .card:nth-child(3) .badge,
+    .card:nth-child(8) .badge {
+      background: var(--yellow);
+      color: #352804;
+    }
+
+    .card:nth-child(4) .badge,
+    .card:nth-child(9) .badge {
+      background: var(--red);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 21px;
+      line-height: 1.22;
+      letter-spacing: 0;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--soft-ink);
+      font-size: 15px;
+    }
+
+    .dark-panel {
+      margin-top: 54px;
+      padding: 42px;
+      color: #fff;
+      background: var(--ink);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .dark-panel h2 {
+      margin: 0 0 20px;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .pipe-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .pipe-list li {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .08);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .dot {
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--red);
+      font-weight: 900;
+    }
+
+    .install {
+      margin-top: 54px;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .install-text,
+    .contact {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 12px 30px rgba(24, 34, 54, .08);
+    }
+
+    .install-text {
+      padding: 36px;
+    }
+
+    .install-text h2 {
+      margin: 0 0 12px;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .install-text p {
+      margin: 0 0 20px;
+      color: var(--soft-ink);
+      font-size: 17px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tags span {
+      padding: 9px 12px;
+      border-radius: 8px;
+      color: #064f82;
+      background: #edf8ff;
+      border: 1px solid #cce8fa;
+      font-weight: 800;
+    }
+
+    .photo {
+      min-height: 330px;
+      border-radius: 8px;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(24, 34, 54, .05), rgba(24, 34, 54, .48)),
+        url("assets/service-van.jpg") center / cover no-repeat;
+      box-shadow: var(--shadow);
+    }
+
+    .contact {
+      margin-top: 54px;
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      background: linear-gradient(135deg, #fff 0%, #fff6d8 100%);
+      border-color: #f2d07b;
+    }
+
+    .contact h2 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .contact p {
+      margin: 8px 0 0;
+      color: var(--soft-ink);
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .phone {
+      display: grid;
+      gap: 3px;
+      color: var(--red-dark);
+      text-align: right;
+      font-size: clamp(30px, 4vw, 44px);
+      font-weight: 900;
+      line-height: 1.08;
+      white-space: nowrap;
+    }
+
+    .phone span {
+      color: var(--soft-ink);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    footer {
+      width: min(1120px, calc(100% - 34px));
+      margin: 28px auto 0;
+      padding-bottom: 26px;
+      color: var(--soft-ink);
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .sticky {
+      position: fixed;
+      z-index: 20;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 12px max(17px, env(safe-area-inset-left)) calc(12px + env(safe-area-inset-bottom));
+      background: rgba(255, 255, 255, .94);
+      border-top: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .sticky-inner {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .sticky strong,
+    .sticky span {
+      display: block;
+    }
+
+    .sticky strong {
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.2;
+    }
+
+    .sticky span {
+      color: var(--soft-ink);
+      font-size: 13px;
+    }
+
+    .sticky a {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      border-radius: 8px;
+      color: #fff;
+      background: var(--red);
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 980px) {
+      .summary,
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .summary-item:nth-child(2) {
+        border-right: 0;
+      }
+
+      .summary-item:nth-child(-n+2) {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .pipe-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .install,
+      .contact {
+        grid-template-columns: 1fr;
+      }
+
+      .phone {
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        min-height: 88vh;
+        background:
+          linear-gradient(180deg, rgba(12, 19, 32, .84) 0%, rgba(12, 19, 32, .7) 48%, rgba(12, 19, 32, .5) 100%),
+          url("assets/service-van.jpg") center / cover no-repeat;
+      }
+
+      .hero-content,
+      main,
+      footer,
+      .summary {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .hero-content {
+        padding-bottom: 86px;
+      }
+
+      .topline {
+        width: 100%;
+        align-items: flex-start;
+      }
+
+      .mark {
+        width: 52px;
+        height: 52px;
+        font-size: 24px;
+      }
+
+      .actions,
+      .btn {
+        width: 100%;
+      }
+
+      .summary,
+      .cards,
+      .pipe-list,
+      .sticky-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .summary-item {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .summary-item:last-child {
+        border-bottom: 0;
+      }
+
+      .section-title {
+        display: block;
+      }
+
+      .section-title p {
+        margin-top: 8px;
+      }
+
+      .dark-panel,
+      .install-text,
+      .contact {
+        padding: 24px 20px;
+      }
+
+      .pipe-list li {
+        min-height: 64px;
+      }
+
+      .photo {
+        min-height: 245px;
+      }
+
+      .phone {
+        white-space: normal;
+      }
+
+      .sticky a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-content">
+        <div class="topline">
+          <div class="mark" aria-hidden="true">龙</div>
+          <div>
+            <strong>莘县 龙腾</strong>
+            <span>家电地暖清洗 · 维修 · 安装</span>
+          </div>
+        </div>
+        <h1>家电清洗维修，地暖管道厨卫上门服务</h1>
+        <p class="lead">空调、冰箱、洗衣机、热水器、油烟机，地暖暖气片，水管马桶地漏，厨房卫浴用品出售安装。</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="tel:15863565769">电话 158 6356 5769</a>
+          <a class="btn btn-secondary" href="#contact">微信同号 · 长按收藏</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="summary" aria-label="服务摘要">
+      <div class="summary-item">
+        <b>家电清洗维修</b>
+        <span>空调、冰箱、洗衣机、热水器、油烟机</span>
+      </div>
+      <div class="summary-item">
+        <b>下水管道</b>
+        <span>疏通下水道、马桶，修水管，换水龙头</span>
+      </div>
+      <div class="summary-item">
+        <b>地暖暖气</b>
+        <span>地暖、暖气片、分水器、铜阀门、管道试压</span>
+      </div>
+      <div class="summary-item">
+        <b>厨卫安装</b>
+        <span>油烟机、燃气灶、热水器、花洒、马桶</span>
+      </div>
+    </section>
+
+    <main>
+      <section>
+        <div class="section-title">
+          <h2>经营项目</h2>
+          <p>日常保养、故障维修、安装更换都可以咨询，适合家庭、门店、出租房备用。</p>
+        </div>
+
+        <div class="cards">
+          <article class="card hot">
+            <div class="badge" aria-hidden="true">空</div>
+            <h3>空调</h3>
+            <p>清洗保养、异味处理、制冷制热问题检查。</p>
+          </article>
+          <article class="card">
+            <div class="badge" aria-hidden="true">冰</div>
+            <h3>冰箱</h3>
+            <p>清洗除味、常见小故障、日常维护。</p>
+          </article>
+          <article class="card">
+            <div class="badge" aria-hidden="true">洗</div>
+            <h3>洗衣机</h3>
+            <p>内筒清洗、排水异常、使用故障处理。</p>
+          </article>
+          <article class="card">
+            <div class="badge" aria-hidden="true">热</div>
+            <h3>热水器</h3>
+            <p>清洗维护、安装更换、厨卫用水检查。</p>
+          </article>
+          <article class="card hot">
+            <div class="badge" aria-hidden="true">烟</div>
+            <h3>油烟机</h3>
+            <p>深度清洗、油污处理、吸力下降检查。</p>
+          </article>
+          <article class="card">
+            <div class="badge" aria-hidden="true">暖</div>
+            <h3>地暖</h3>
+            <p>地暖清洗、供暖不热、管道维护。</p>
+          </article>
+          <article class="card">
+            <div class="badge" aria-hidden="true">片</div>
+            <h3>暖气片</h3>
+            <p>暖气片清洗维护、散热不佳检查。</p>
+          </article>
+          <article class="card">
+            <div class="badge" aria-hidden="true">阀</div>
+            <h3>分水器 铜阀门</h3>
+            <p>更换分水器、铜阀门，处理老化漏水隐患。</p>
+          </article>
+          <article class="card">
+            <div class="badge" aria-hidden="true">压</div>
+            <h3>地暖管道试压</h3>
+            <p>装修前后、检修后进行试压，排查管道问题。</p>
+          </article>
+          <article class="card hot">
+            <div class="badge" aria-hidden="true">修</div>
+            <h3>维修安装</h3>
+            <p>家电、厨卫、水路相关问题，可电话微信咨询。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="dark-panel">
+        <h2>疏通下水道 马桶 · 水管地漏返味修复</h2>
+        <ul class="pipe-list">
+          <li><span class="dot">✓</span>疏通下水道</li>
+          <li><span class="dot">✓</span>疏通马桶</li>
+          <li><span class="dot">✓</span>修水管</li>
+          <li><span class="dot">✓</span>换水龙头</li>
+          <li><span class="dot">✓</span>换地漏</li>
+          <li><span class="dot">✓</span>卫生间返味修复</li>
+        </ul>
+      </section>
+
+      <section class="install">
+        <div class="install-text">
+          <h2>出售安装厨房卫浴用品</h2>
+          <p>油烟机、燃气灶、热水器、花洒、马桶等用品，可咨询购买、安装、更换。</p>
+          <div class="tags">
+            <span>油烟机</span>
+            <span>燃气灶</span>
+            <span>热水器</span>
+            <span>花洒</span>
+            <span>马桶</span>
+            <span>厨房卫浴</span>
+          </div>
+        </div>
+        <div class="photo" role="img" aria-label="龙腾家电清洗维修服务车辆"></div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div>
+          <h2>电话微信同号</h2>
+          <p>长按收藏，留做备用。家电清洗维修、地暖暖气、下水管道、厨卫安装都可联系。</p>
+        </div>
+        <a class="phone" href="tel:15863565769">
+          158 6356 5769
+          <span>点击号码直接拨打</span>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      莘县龙腾家电地暖清洗维修 · 家电清洗 · 地暖暖气 · 管道卫浴 · 厨卫安装
+    </footer>
+  </div>
+
+  <aside class="sticky" aria-label="固定联系栏">
+    <div class="sticky-inner">
+      <div>
+        <strong>莘县龙腾家电清洗维修</strong>
+        <span>电话微信：158 6356 5769</span>
+      </div>
+      <a href="tel:15863565769">立即拨打</a>
+    </div>
+  </aside>
+</body>
+</html>
