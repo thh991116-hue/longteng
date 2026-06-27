@@ -83,8 +83,8 @@
     }
 
     .mark {
-      width: 108px;
-      height: 64px;
+      width: 122px;
+      height: 70px;
       display: grid;
       place-items: center;
       border-radius: 8px;
@@ -92,7 +92,7 @@
       border: 2px solid rgba(255, 255, 255, .9);
       box-shadow: 0 10px 24px rgba(0, 0, 0, .22);
       font-weight: 900;
-      font-size: 35px;
+      font-size: 43px;
       line-height: 1;
       font-family: "STXingkai", "KaiTi", "Microsoft YaHei", serif;
       letter-spacing: 0;
@@ -237,33 +237,39 @@
     }
 
     .card {
-      min-height: 174px;
+      min-height: 202px;
       padding: 20px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: #fff;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .74), rgba(255, 255, 255, .95)),
+        var(--card-img, linear-gradient(135deg, #fff, #eef7ff)) center / cover no-repeat;
       box-shadow: 0 10px 28px rgba(24, 34, 54, .06);
+      overflow: hidden;
     }
 
     .card.hot {
       border-color: #f1b7b7;
-      background: linear-gradient(145deg, #fff, #fff3f3);
+      background:
+        linear-gradient(180deg, rgba(255, 246, 246, .7), rgba(255, 255, 255, .95)),
+        var(--card-img, linear-gradient(135deg, #fff, #fff3f3)) center / cover no-repeat;
     }
 
     .badge {
-      min-width: 72px;
+      min-width: 88px;
       width: fit-content;
-      height: 48px;
+      height: 54px;
       display: grid;
       place-items: center;
-      padding: 0 12px;
-      margin-bottom: 12px;
+      padding: 0 16px;
+      margin-bottom: 20px;
       border-radius: 8px;
       color: #fff;
       background: var(--blue);
       font-weight: 900;
-      font-size: 20px;
+      font-size: 24px;
       white-space: nowrap;
+      box-shadow: 0 10px 20px rgba(24, 34, 54, .14);
     }
 
     .card:nth-child(2) .badge,
@@ -282,17 +288,13 @@
       background: var(--red);
     }
 
-    .card h3 {
-      margin: 0 0 8px;
-      font-size: 21px;
-      line-height: 1.22;
-      letter-spacing: 0;
-    }
-
     .card p {
       margin: 0;
-      color: var(--soft-ink);
-      font-size: 15px;
+      color: #26344d;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.55;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
     }
 
     .dark-panel {
@@ -381,16 +383,18 @@
     .tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 14px;
     }
 
     .tags span {
-      padding: 9px 12px;
+      padding: 12px 18px;
       border-radius: 8px;
       color: #064f82;
       background: #edf8ff;
       border: 1px solid #cce8fa;
-      font-weight: 800;
+      font-size: 22px;
+      font-weight: 900;
+      box-shadow: 0 8px 18px rgba(6, 79, 130, .08);
     }
 
     .photo {
@@ -557,9 +561,9 @@
       }
 
       .mark {
-        width: 92px;
-        height: 52px;
-        font-size: 24px;
+        width: 104px;
+        height: 56px;
+        font-size: 32px;
       }
 
       .actions,
@@ -662,54 +666,44 @@
         </div>
 
         <div class="cards">
-          <article class="card hot">
+          <article class="card hot" style="--card-img: url('https://source.unsplash.com/900x600/?air-conditioner-cleaning');">
             <div class="badge" aria-hidden="true">空调</div>
-            <h3>空调</h3>
             <p>清洗保养、异味处理、制冷制热问题检查。</p>
           </article>
-          <article class="card">
+          <article class="card" style="--card-img: url('https://source.unsplash.com/900x600/?refrigerator-cleaning');">
             <div class="badge" aria-hidden="true">冰箱</div>
-            <h3>冰箱</h3>
             <p>清洗除味、常见小故障、日常维护。</p>
           </article>
-          <article class="card">
+          <article class="card" style="--card-img: url('https://source.unsplash.com/900x600/?washing-machine-cleaning');">
             <div class="badge" aria-hidden="true">洗衣机</div>
-            <h3>洗衣机</h3>
             <p>内筒清洗、排水异常、使用故障处理。</p>
           </article>
-          <article class="card">
+          <article class="card" style="--card-img: url('https://source.unsplash.com/900x600/?water-heater-repair');">
             <div class="badge" aria-hidden="true">热水器</div>
-            <h3>热水器</h3>
             <p>清洗维护、安装更换、厨卫用水检查。</p>
           </article>
-          <article class="card hot">
+          <article class="card hot" style="--card-img: url('https://source.unsplash.com/900x600/?range-hood-cleaning');">
             <div class="badge" aria-hidden="true">油烟机</div>
-            <h3>油烟机</h3>
             <p>深度清洗、油污处理、吸力下降检查。</p>
           </article>
-          <article class="card">
+          <article class="card" style="--card-img: url('https://source.unsplash.com/900x600/?floor-heating-cleaning');">
             <div class="badge" aria-hidden="true">地暖</div>
-            <h3>地暖</h3>
             <p>地暖清洗、供暖不热、管道维护。</p>
           </article>
-          <article class="card">
+          <article class="card" style="--card-img: url('https://source.unsplash.com/900x600/?radiator-heating-cleaning');">
             <div class="badge" aria-hidden="true">暖气片</div>
-            <h3>暖气片</h3>
             <p>暖气片清洗维护、散热不佳检查。</p>
           </article>
-          <article class="card">
+          <article class="card" style="--card-img: url('https://source.unsplash.com/900x600/?plumbing-valve-repair');">
             <div class="badge" aria-hidden="true">分水器</div>
-            <h3>分水器 铜阀门</h3>
             <p>更换分水器、铜阀门，处理老化漏水隐患。</p>
           </article>
-          <article class="card">
+          <article class="card" style="--card-img: url('https://source.unsplash.com/900x600/?pipe-pressure-test');">
             <div class="badge" aria-hidden="true">试压</div>
-            <h3>地暖管道试压</h3>
             <p>装修前后、检修后进行试压，排查管道问题。</p>
           </article>
-          <article class="card hot">
+          <article class="card hot" style="--card-img: url('https://source.unsplash.com/900x600/?home-appliance-repair');">
             <div class="badge" aria-hidden="true">维修</div>
-            <h3>维修安装</h3>
             <p>家电、厨卫、水路相关问题，可电话微信咨询。</p>
           </article>
         </div>
